@@ -1,11 +1,12 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using GymApi.Models;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GymApi.Data.CustomIdentity
+namespace GymApi.Models.CustomIdentity
 {
     //tabla AspNetRoles
     public class ApplicationRole : IdentityRole<int>
@@ -39,7 +40,7 @@ namespace GymApi.Data.CustomIdentity
         public string Imagen1 { get; set; }
         public string Imagen2 { get; set; }
         public string Imagen3 { get; set; }
-        //public virtual ICollection<Usuarios> Usuarios { get; set; }
+        public Ejercicios ejercicios { get; set; }
     }
 
     //tabla AspNetUsersRole

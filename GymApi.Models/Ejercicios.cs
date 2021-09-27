@@ -3,8 +3,7 @@ using System.Collections.Generic;
 //using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using GymApi.Data;
-using GymApi.Data.CustomIdentity;
+using GymApi.Models.CustomIdentity;
 
 namespace GymApi.Models
 {
